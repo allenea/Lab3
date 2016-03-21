@@ -755,9 +755,9 @@ public void TestFiveOfAKindEval() {
 		// Was the four of a kind an Ace?
 		assertEquals(hs.getHiHand(), eRank.FIVE.getiRankNbr());
 		// FOAK has one kicker. Was it a Club?
-		assertEquals(hs.getKickers().get(eCardNo.FirstCard.getCardNo()).geteSuit(), eSuit.DIAMONDS);
+		assertEquals(hs.getKickers().get(eCardNo.FourthCard.getCardNo()).geteSuit(), eSuit.SPADES);
 		// FOAK has one kicker. Was it a King?
-		assertEquals(hs.getKickers().get(eCardNo.FirstCard.getCardNo()).geteRank(), eRank.FOUR);
+		assertEquals(hs.getKickers().get(eCardNo.FourthCard.getCardNo()).geteRank(), eRank.FOUR);
 	}
 
 	
@@ -793,9 +793,9 @@ public void TestFiveOfAKindEval() {
  		// Was the four of a kind an Ace? 
  		assertEquals(hs.getHiHand(), eRank.FIVE.getiRankNbr()); 
  		// FOAK has one kicker. Was it a Club? 
- 		assertEquals(hs.getKickers().get(eCardNo.FirstCard.getCardNo()).geteSuit(), eSuit.SPADES); 
+ 		assertEquals(hs.getKickers().get(eCardNo.FourthCard.getCardNo()).geteSuit(), eSuit.CLUBS); 
  		// FOAK has one kicker. Was it a King? 
- 		assertEquals(hs.getKickers().get(eCardNo.FirstCard.getCardNo()).geteRank(), eRank.FOUR); 
+ 		assertEquals(hs.getKickers().get(eCardNo.FifthCard.getCardNo()).geteRank(), eRank.THREE); 
  	}
  	@Test
 	public void TestIsHandTwoPair3() {
@@ -819,9 +819,9 @@ public void TestFiveOfAKindEval() {
 		// Was the four of a kind an Ace?
 		assertEquals(hs.getHiHand(), eRank.FOUR.getiRankNbr());
 		// FOAK has one kicker. Was it a Club?
-		assertEquals(hs.getKickers().get(eCardNo.FirstCard.getCardNo()).geteSuit(), eSuit.SPADES);
+		assertEquals(hs.getKickers().get(eCardNo.FirstCard.getCardNo()).geteSuit(), eSuit.CLUBS);
 		// FOAK has one kicker. Was it a King?
-		assertEquals(hs.getKickers().get(eCardNo.FirstCard.getCardNo()).geteRank(), eRank.THREE);
+		assertEquals(hs.getKickers().get(eCardNo.FirstCard.getCardNo()).geteRank(), eRank.FIVE);
 	}
 
 	
@@ -857,9 +857,9 @@ public void TestFiveOfAKindEval() {
  		// Was the four of a kind an Ace? 
  		assertEquals(hs.getHiHand(), eRank.FOUR.getiRankNbr()); 
  		// FOAK has one kicker. Was it a Club? 
- 		assertEquals(hs.getKickers().get(eCardNo.FirstCard.getCardNo()).geteSuit(), eSuit.SPADES); 
+ 		assertEquals(hs.getKickers().get(eCardNo.FirstCard.getCardNo()).geteSuit(), eSuit.CLUBS); 
  		// FOAK has one kicker. Was it a King? 
- 		assertEquals(hs.getKickers().get(eCardNo.FirstCard.getCardNo()).geteRank(), eRank.THREE); 
+ 		assertEquals(hs.getKickers().get(eCardNo.FirstCard.getCardNo()).geteRank(), eRank.FIVE); 
  	}
 	
 	
